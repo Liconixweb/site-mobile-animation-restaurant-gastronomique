@@ -1,4 +1,270 @@
+@charset "UTF-8";
+/*Polices utilisées*/
+h1, h2, h3 {
+  font-family: shrikhand, sans-serif;
+}
+
+p {
+  font-family: roboto, sans-serif;
+}
+
+/*Mise en forme générale*/
+body {
+  max-width: 375px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: black;
+}
+
 h1 {
-  color: #9356DC;
+  font-size: 24px;
+  font-weight: 750;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 900;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 18px;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+}
+
+.logo img {
+  height: 30px;
+  width: 165px;
+}
+
+/*header*/
+header {
+  height: 400px;
+}
+
+.header-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  background-color: #eaeaea;
+  -webkit-box-shadow: 0 5px 5px inset #dcdcdc;
+          box-shadow: 0 5px 5px inset #dcdcdc;
+  padding-left: 105px;
+}
+
+.header-input i {
+  height: 15px;
+}
+
+#ville {
+  background-color: #eaeaea;
+  color: black;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.header-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  height: 285px;
+  background-color: #f6f6f6;
+}
+
+.header-text h1 {
+  width: 250px;
+  margin-top: 0;
+}
+
+.header-text p {
+  margin-top: 0;
+}
+
+.header-text button {
+  height: 50px;
+  width: 220px;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 30px 30px 30px 30px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  border: none;
+  margin-top: 15px;
+}
+
+/*nav*/
+nav {
+  height: 400px;
+  margin: 50px 0 0 0;
+}
+
+nav h2 {
+  padding-left: 20px;
+}
+
+.nav-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70px;
+  width: 335px;
+  margin: 35px 0 30px 0;
+  padding-left: 20px;
+}
+
+.nav-button p {
+  height: 25px;
+  width: 25px;
+  line-height: 25px;
+  font-size: 12px;
+  border-radius: 100%;
+  background-color: #9356DC;
+  color: white;
+  text-align: center;
+  margin-right: -10px;
+  z-index: 0;
+}
+
+.nav-button button {
+  height: 75px;
+  width: 330px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #f6f6f6;
+  -webkit-box-shadow: 0px 0px 10px #e2e0e0;
+          box-shadow: 0px 0px 10px #e2e0e0;
+  border-radius: 20px 20px 20px 20px;
+  border: none;
+}
+
+.nav-button i {
+  padding: 0 30px 0 0;
+  height: 15px;
+}
+
+/*section*/
+section {
+  height: 1225px;
+  background-color: #f6f6f6;
+  padding: 0 20px 0 20px;
+}
+
+section h2 {
+  padding-top: 60px;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 250px;
+  background-color: white;
+  border-radius: 20px 20px 20px 20px;
+  margin-bottom: 20px;
+}
+
+.menu :nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu img {
+  height: 175px;
+  width: 330px;
+  border-radius: 20px 20px 0 0;
+}
+
+.menu :nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+#palette {
+  height: 30px;
+  width: 80px;
+  /*
+    p{
+    background-color: #99e2d0;
+    color: #30a387;
+    font-size: 12px;
+    font-weight: bold;
+    }*/
+}
+
+#palette p {
+  background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
 }
 /*# sourceMappingURL=styles.css.map */
