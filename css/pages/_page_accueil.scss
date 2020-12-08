@@ -1,3 +1,4 @@
+/*page d'accueil*/
 /*header*/
 header{
     height: 400px;
@@ -121,25 +122,17 @@ section{
         height: 175px;
         width: 330px;
         border-radius: 20px 20px 0 0;
+        overflow: hidden;
     }
-
     :nth-child(2){
         display: flex;
         flex-flow: row nowrap;
     }
 }
-#palette{
-    height: 30px;
-    width: 80px;
-    p{
-    background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
-    }
-
-/*
-    p{
+.nouveau{
     background-color: #99e2d0;
     color: #30a387;
     font-size: 12px;
     font-weight: bold;
-    }*/
-}
+    z-index: 1;
+    }
