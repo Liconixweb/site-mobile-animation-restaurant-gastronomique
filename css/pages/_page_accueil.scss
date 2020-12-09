@@ -113,43 +113,34 @@ section{
     background-color: white;
     border-radius: 20px 20px 20px 20px;
     margin-bottom: 20px;
-    :nth-child(1){
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
-        align-items: center;
-    }
-    img{
+    figure{
         height: 175px;
         width: 330px;
+        margin: 0;
+        p{
+            line-height: 30px;
+            width: 80px;
+            text-align: center;
+            border-radius: 2px 2px 2px 2px;
+            background-color: $tertiaire;
+            color: #30a387;
+            font-size: 14px;
+            font-weight: bold;    
+            position: relative;
+            left: 235px;
+            bottom: 180px;            
+            z-index: 2;
+        }
+    }
+    img{
+        height: 100%;
+        width: 100%;
         border-radius: 20px 20px 0 0;
+        object-fit: cover;
         overflow: hidden;
+        z-index: 1;
     }
-}
-.menu-img{
-    position: relative;
-    left: 40px;
-    z-index: 1;
-}
-.nouveau{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 30px;
-    width: 80px;
-    border-radius: 2px 2px 2px 2px;
-    background-color: #99e2d0;
-    color: #30a387;
-    font-size: 12px;
-    font-weight: bold;    
-    position: relative;
-    top: -60px;
-    left: -50px;
-    z-index: 2;
-    p{
-        font-size: 12px;
-    }
-}
+}        
 .menu-texte{
     display: flex;
     flex-wrap: nowrap;
