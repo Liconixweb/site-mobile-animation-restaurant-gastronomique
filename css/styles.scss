@@ -22,8 +22,14 @@
 //layout
     //header
     @import"./layout/header";
+    
+    //footer
+    @import"./layout/footer";
 
 //pages
     //page d'accueil
     @import"./pages/page_accueil";
+
+    //page menu
+    @import"./pages/page_menu";
 
