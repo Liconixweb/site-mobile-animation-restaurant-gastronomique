@@ -378,8 +378,19 @@ footer i {
   overflow: hidden;
 }
 
-.menu-section {
+.menu-1-section {
   height: 1390px;
+  position: absolute;
+  top: 280px;
+  background-color: #f6f6f6;
+  border-radius: 20px 20px 0 0;
+  margin-bottom: 0;
+  padding: 40px 15px 30px 15px;
+  z-index: 1;
+}
+
+.menu-2-section {
+  height: 1425px;
   position: absolute;
   top: 280px;
   background-color: #f6f6f6;
@@ -476,9 +487,15 @@ footer i {
   margin: 40px 0 70px 0;
 }
 
-footer {
+.menu-1-footer {
   position: relative;
   top: 1340px;
+  z-index: 2;
+}
+
+.menu-2-footer {
+  position: relative;
+  top: 1450px;
   z-index: 2;
 }
 /*# sourceMappingURL=styles.css.map */
