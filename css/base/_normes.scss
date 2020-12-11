@@ -1,7 +1,10 @@
 /*Mise en forme générale*/
+html{
+    height: 100%;
+}
 body{
     max-width: 375px;
-    
+    height: 100%;
     margin: 0 auto;
     box-sizing: border-box;
     color: black;
