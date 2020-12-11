@@ -51,7 +51,6 @@ a {
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
   border: none;
-  margin-top: 15px;
 }
 
 .logo {
@@ -74,7 +73,7 @@ a {
 
 /*footer*/
 footer {
-  height: 200px;
+  max-height: 200px;
   background-color: #353535;
   color: white;
   padding: 25px 0 20px 25px;
@@ -127,6 +126,7 @@ footer i {
 }
 
 #ville {
+  width: 150px;
   background-color: #eaeaea;
   color: black;
   border: none;
@@ -379,24 +379,45 @@ footer i {
 }
 
 .menu-1-section {
-  height: 1390px;
+  height: 1375px;
   position: absolute;
   top: 280px;
   background-color: #f6f6f6;
   border-radius: 20px 20px 0 0;
   margin-bottom: 0;
-  padding: 40px 15px 30px 15px;
+  padding: 30px 10px 30px 10px;
   z-index: 1;
 }
 
 .menu-2-section {
-  height: 1425px;
+  height: 1550px;
+  position: absolute;
+  top: 280px;
+  background-color: #f6f6f6;
+  border-radius: 20px 20px 0 0;
+  padding: 40px 10px 0 10px;
+  z-index: 1;
+}
+
+.menu-3-section {
+  height: 1380px;
   position: absolute;
   top: 280px;
   background-color: #f6f6f6;
   border-radius: 20px 20px 0 0;
   margin-bottom: 0;
-  padding: 40px 15px 30px 15px;
+  padding: 40px 13px 30px 13px;
+  z-index: 1;
+}
+
+.menu-4-section {
+  height: 1375px;
+  position: absolute;
+  top: 280px;
+  background-color: #f6f6f6;
+  border-radius: 20px 20px 0 0;
+  margin-bottom: 0;
+  padding: 40px 13px 20px 13px;
   z-index: 1;
 }
 
@@ -410,10 +431,11 @@ footer i {
       -ms-flex-align: center;
           align-items: center;
   height: 30px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 
 .menu-section-title h1 {
+  width: 300px;
   font-style: italic;
   font-weight: 1000;
   margin: 0;
@@ -423,17 +445,19 @@ footer i {
   height: 25px;
   width: 25px;
   font-size: 25px;
-  margin-left: 35px;
   font-weight: 100;
+  padding-right: 25px;
 }
 
 .menu-article {
-  margin-bottom: 40px;
+  margin: 10px 0 25px 0;
 }
 
 .menu-article h2 {
+  height: 30px;
   font-size: 16px;
   font-weight: 300;
+  padding-left: 5px;
 }
 
 .menu-article-texte {
@@ -451,7 +475,7 @@ footer i {
   background-color: white;
   border-radius: 20px 20px 20px 20px;
   margin-bottom: 15px;
-  padding: 10px;
+  padding: 15px;
 }
 
 .menu-article-texte h3 {
@@ -484,18 +508,30 @@ footer i {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 40px 0 70px 0;
+  margin: 50px 0 70px 0;
 }
 
 .menu-1-footer {
   position: relative;
-  top: 1340px;
+  top: 1400px;
   z-index: 2;
 }
 
 .menu-2-footer {
   position: relative;
-  top: 1450px;
+  top: 1545px;
+  z-index: 2;
+}
+
+.menu-3-footer {
+  position: relative;
+  top: 1400px;
+  z-index: 2;
+}
+
+.menu-4-footer {
+  position: relative;
+  top: 1390px;
   z-index: 2;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -29,23 +29,42 @@
     }
 }
 .menu-1-section{
-    height: 1390px;
+    height: 1375px;
     position: absolute;
-    top:280px;
+    top: 280px;
     background-color: #f6f6f6;
     border-radius: 20px 20px 0 0;
     margin-bottom: 0;
-    padding: 40px 15px 30px 15px;
+    padding: 30px 10px 30px 10px;
     z-index: 1;
 }
 .menu-2-section{
-    height: 1425px;
+    height: 1550px;
     position: absolute;
-    top:280px;
+    top: 280px;
+    background-color: #f6f6f6;
+    border-radius: 20px 20px 0 0;
+    padding: 40px 10px 0 10px;
+    z-index: 1;
+}
+.menu-3-section{
+    height: 1380px;
+    position: absolute;
+    top: 280px;
     background-color: #f6f6f6;
     border-radius: 20px 20px 0 0;
     margin-bottom: 0;
-    padding: 40px 15px 30px 15px;
+    padding: 40px 13px 30px 13px;
+    z-index: 1;
+}
+.menu-4-section{
+    height: 1375px;
+    position: absolute;
+    top: 280px;
+    background-color: #f6f6f6;
+    border-radius: 20px 20px 0 0;
+    margin-bottom: 0;
+    padding: 40px 13px 20px 13px;
     z-index: 1;
 }
 .menu-section-title{
@@ -53,8 +72,9 @@
     flex-wrap: nowrap;
     align-items: center;
     height: 30px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     h1{
+        width: 300px;
         font-style: italic;
         font-weight: 1000;   
         margin: 0; 
@@ -62,16 +82,18 @@
     i{
         height: 25px;
         width: 25px;
-        font-size: 25px;
-        margin-left: 35px;
+        font-size: 25px;        
         font-weight: 100;
+        padding-right: 25px;
     }
 }
 .menu-article{
-    margin-bottom: 40px;
+    margin: 10px 0 25px 0;
     h2{
+        height: 30px;
         font-size: 16px;
         font-weight: 300;
+        padding-left: 5px;
     }
 }
 .menu-article-texte{
@@ -82,7 +104,7 @@
     background-color: white;
     border-radius: 20px 20px 20px 20px;
     margin-bottom: 15px;
-    padding: 10px;
+    padding: 15px;
     h3{
         margin: 10px 0 0 0; 
     }
@@ -101,15 +123,25 @@
 .menu-button{
     display: flex;
     justify-content: center;
-    margin: 40px 0 70px 0;
+    margin: 50px 0 70px 0;
 }
 .menu-1-footer{
     position: relative;
-    top: 1340px;
+    top: 1400px;
     z-index: 2;
 }
 .menu-2-footer{
     position: relative;
-    top: 1450px;
+    top: 1545px;
+    z-index: 2;
+}
+.menu-3-footer{
+    position: relative;
+    top: 1400px;
+    z-index: 2;
+}
+.menu-4-footer{
+    position: relative;
+    top: 1390px;
     z-index: 2;
 }
