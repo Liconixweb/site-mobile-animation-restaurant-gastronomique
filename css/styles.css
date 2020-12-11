@@ -32,7 +32,7 @@ h3 {
 }
 
 p {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: lighter;
 }
 
@@ -379,28 +379,28 @@ footer i {
 }
 
 .menu-1-section {
-  height: 1375px;
+  height: 1090px;
   position: absolute;
   top: 280px;
   background-color: #f6f6f6;
   border-radius: 20px 20px 0 0;
   margin-bottom: 0;
-  padding: 30px 10px 30px 10px;
+  padding: 30px 13px 30px 13px;
   z-index: 1;
 }
 
 .menu-2-section {
-  height: 1550px;
+  height: 1200px;
   position: absolute;
   top: 280px;
   background-color: #f6f6f6;
   border-radius: 20px 20px 0 0;
-  padding: 40px 10px 0 10px;
+  padding: 40px 13px 0 13px;
   z-index: 1;
 }
 
 .menu-3-section {
-  height: 1380px;
+  height: 1090px;
   position: absolute;
   top: 280px;
   background-color: #f6f6f6;
@@ -411,7 +411,7 @@ footer i {
 }
 
 .menu-4-section {
-  height: 1375px;
+  height: 1090px;
   position: absolute;
   top: 280px;
   background-color: #f6f6f6;
@@ -478,7 +478,7 @@ footer i {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: auto;
+  height: 40px;
   background-color: white;
   border-radius: 20px 20px 20px 20px;
   margin-top: 15px;
@@ -520,25 +520,25 @@ footer i {
 
 .menu-1-footer {
   position: relative;
-  top: 1400px;
+  top: 1100px;
   z-index: 2;
 }
 
 .menu-2-footer {
   position: relative;
-  top: 1545px;
+  top: 1195px;
   z-index: 2;
 }
 
 .menu-3-footer {
   position: relative;
-  top: 1400px;
+  top: 1110px;
   z-index: 2;
 }
 
 .menu-4-footer {
   position: relative;
-  top: 1390px;
+  top: 1100px;
   z-index: 2;
 }
 /*# sourceMappingURL=styles.css.map */
