@@ -1,10 +1,10 @@
 @charset "UTF-8";
 /*Polices utilisées*/
-h1, h2, h3 {
-  font-family: "shrikhand", sans-serif;
+h1 {
+  font-family: "Shrikhand", cursive;
 }
 
-p {
+h2, h3, p {
   font-family: "Roboto Condense", sans-serif;
 }
 
