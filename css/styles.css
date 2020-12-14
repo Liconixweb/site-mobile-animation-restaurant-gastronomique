@@ -90,11 +90,7 @@ a {
   font-size: 30px;
   font-weight: bold;
   text-shadow: 5px 5px 4px #c9c6c6;
-}
-
-.chargement-texte:hover {
-  -webkit-animation-play-state: paused;
-  animation-play-state: paused;
+  opacity: 0;
 }
 
 /*Animation du loader*/
@@ -165,10 +161,19 @@ a {
 }
 
 .button:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff93e1), to(#a16be0));
-  background: linear-gradient(#ff93e1, #a16be0);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffdff6), to(#c9abee));
+  background: linear-gradient(#ffdff6, #c9abee);
   -webkit-box-shadow: 10px 10px 20px #c9c6c6;
           box-shadow: 10px 10px 20px #c9c6c6;
+  border: none;
+}
+
+.button:active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffdff6), to(#c9abee));
+  background: linear-gradient(#ffdff6, #c9abee);
+  -webkit-box-shadow: 10px 10px 20px #c9c6c6;
+          box-shadow: 10px 10px 20px #c9c6c6;
+  border: none;
 }
 
 .logo {
@@ -334,9 +339,18 @@ footer i {
           box-shadow: 0px 0px 10px #e2e0e0;
   border-radius: 20px 20px 20px 20px;
   border: none;
+  cursor: pointer;
 }
 
-.nav-button i {
+.nav-button button:hover {
+  background-color: #f5edff;
+}
+
+.nav-button button:hover i {
+  color: #9356DC;
+}
+
+.nav-button button i {
   padding: 0 30px 0 0;
   height: 15px;
 }

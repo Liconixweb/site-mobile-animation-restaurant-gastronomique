@@ -12,5 +12,11 @@
     &:hover{
         background: linear-gradient($lightsecondaire, $lightprimaire);
         box-shadow: 10px 10px 20px $darkombre;
+        border: none;
+    }
+    &:active{
+        background: linear-gradient($lightsecondaire, $lightprimaire);
+        box-shadow: 10px 10px 20px $darkombre;
+        border: none;
     }
 }

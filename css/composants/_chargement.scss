@@ -33,10 +33,7 @@
     font-size: 30px;
     font-weight: bold;
     text-shadow: 5px 5px 4px $darkombre;
-    &:hover{
-        -webkit-animation-play-state: paused;
-        animation-play-state: paused;
-    }
+    opacity: 0;
 }
 
 /*Animation du loader*/
