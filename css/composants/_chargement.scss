@@ -1,0 +1,63 @@
+/*Création du loader*/
+.chargement{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    width: 200px;
+    margin: auto;
+    position: absolute;
+    top: 200px;
+    right: 0;
+    left: 105px;
+    bottom: 0;
+    margin: 0;    
+}     
+.chargement-icon{        
+    height: 100px;
+    width: 100px;
+    -webkit-animation: spinner 3s linear 3;
+    animation: spinner 3s linear 3;
+    color: $secondaire;
+    padding: 0 0 150px 30px;
+    text-align: center;
+    font-size: 100px;
+    opacity: 0;
+}
+.chargement-texte{
+    height: 20px;
+    width: 100px;
+    -webkit-animation: chargement 3s linear 3;
+    animation: chargement 3s linear 3;
+    color: $primaire;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 5px 5px 4px $darkombre;
+    &:hover{
+        -webkit-animation-play-state: paused;
+        animation-play-state: paused;
+    }
+}
+
+/*Animation du loader*/
+@keyframes spinner{
+    0%{
+        opacity: 0;
+        transform: rotate(0deg);
+    }
+    100%{
+        opacity: 1;
+        transform: rotate(360deg);
+    }
+}
+@keyframes chargement{
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+   
+}

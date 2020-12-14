@@ -1,6 +1,12 @@
 $primaire: #9356DC;
 $secondaire: #FF79DA;
 $tertiaire: #99E2D0;
+$ombre: #e2e0e0;
+$lightprimaire: lighten($primaire,5%);
+$lightsecondaire: lighten($secondaire,5%);
+$lighttertiaire: lighten($tertiaire,5%);
+$darkombre: darken($ombre,10%);
+$coeurdegrade: linear-gradient($primaire, $secondaire);
 $logo: 'Shrikhand', cursive;
 $titre: 'Shrikhand', cursive;
 $texte: 'Roboto Condense', sans-serif;
