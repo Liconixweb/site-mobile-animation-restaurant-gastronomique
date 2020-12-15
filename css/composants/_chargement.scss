@@ -54,8 +54,7 @@
         background: $ombre;
     }
     100%{
-        visibility: hidden;
-        
+        visibility: hidden;        
     }
 }
 @keyframes spinner{
@@ -83,4 +82,28 @@
         transform: scale(1);
     }
    
+}
+/*Chargement page menu*/
+@keyframes article{
+    0%{
+        visibility: visible;
+        transform: translateY(100%);
+    }
+    25%{
+        visibility: visible;
+        transform: translateY(75%);
+    }
+    50%{
+        visibility: visible;
+        transform: translateY(50%);
+    }
+    75%{
+        visibility: visible;
+        transform: translateY(25%);
+    }
+    100%{
+        visibility: visible;
+        transform: translateY(0);
+        
+    }
 }

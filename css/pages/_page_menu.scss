@@ -87,6 +87,22 @@
         padding-right: 25px;
     }
 }
+.article-1{
+    -webkit-animation: article 3s linear;
+    -moz-animation: article 3s linear;
+    animation: article 3s linear;
+}
+.article-2{    
+    -webkit-animation: article 4s linear;
+    -moz-animation: article 4s linear;
+    animation: article 4s linear;
+}
+.article-3{
+    
+    -webkit-animation: article 5s linear;
+    -moz-animation: article 5s linear;
+    animation: article 5s linear;
+}
 .menu-article{
     margin: 10px 0 25px 0;
     h2{
@@ -125,14 +141,15 @@
     cursor: pointer;
     h3{
         margin: 10px 0 0 0; 
-    }
-    button{
-        display: none;
-    }
+    }    
     .check{
-        .check-button{
-            transform: scaleX(0);
-            transition: transform 000ms;
+        width: 0;
+        transform: scaleX(0);
+        transition: transform 1s;
+        transform-origin: right;
+        i{
+            transform: rotate(0deg);
+            transition: transform 1s;
         }
     }
     &:hover{
@@ -157,29 +174,55 @@
             text-overflow: ellipsis;
         }
         .check{
-            .check-button{
-                display: flex;  
-                justify-content: center;
-                align-items: center;
-                height: 70px;
-                width: 60px;
-                background-color: $tertiaire;
-                border: 0;
-                border-radius: 0 20px 20px 0;
-                margin: 0;
-                padding: 0;
-                cursor: pointer;
-                transform: scaleX(1);
-                i{
-                height: 20px;
-                line-height: 20px;
-                width: 20px;
-                border-radius: 100%;
-                font-size: 12px;
-                color: $tertiaire;
-                text-align: center;
-                background-color: white;
-                }
+            display: flex;  
+            justify-content: center;
+            align-items: center;
+            height: 70px;
+            width: 60px;
+            background-color: $tertiaire;
+            border: 0;
+            border-radius: 0 20px 20px 0;
+            margin: 0;
+            padding: 0;
+            transform: scaleX(1);
+            i{
+            height: 20px;
+            line-height: 20px;
+            width: 20px;
+            border-radius: 100%;
+            font-size: 12px;
+            color: $tertiaire;
+            text-align: center;
+            background-color: white;
+            transform: rotate(360deg);
+            cursor: pointer;
+            }
+        }
+    }
+    &:active{
+        .check{
+            display: flex;  
+            justify-content: center;
+            align-items: center;
+            height: 70px;
+            width: 60px;
+            background-color: $tertiaire;
+            border: 0;
+            border-radius: 0 20px 20px 0;
+            margin: 0;
+            padding: 0;
+            cursor: pointer;
+            transform: scaleX(1);
+            i{
+            height: 20px;
+            line-height: 20px;
+            width: 20px;
+            border-radius: 100%;
+            font-size: 12px;
+            color: $tertiaire;
+            text-align: center;
+            background-color: white;
+            transform: rotate(360deg);
             }
         }
     }

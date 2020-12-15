@@ -193,6 +193,62 @@ a {
   }
 }
 
+/*Chargement page menu*/
+@-webkit-keyframes article {
+  0% {
+    visibility: visible;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  25% {
+    visibility: visible;
+    -webkit-transform: translateY(75%);
+            transform: translateY(75%);
+  }
+  50% {
+    visibility: visible;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
+  75% {
+    visibility: visible;
+    -webkit-transform: translateY(25%);
+            transform: translateY(25%);
+  }
+  100% {
+    visibility: visible;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes article {
+  0% {
+    visibility: visible;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  25% {
+    visibility: visible;
+    -webkit-transform: translateY(75%);
+            transform: translateY(75%);
+  }
+  50% {
+    visibility: visible;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
+  75% {
+    visibility: visible;
+    -webkit-transform: translateY(25%);
+            transform: translateY(25%);
+  }
+  100% {
+    visibility: visible;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
 .button {
   height: 50px;
   width: 220px;
@@ -305,6 +361,10 @@ footer i {
   height: 15px;
   width: 15px;
   line-height: 15px;
+}
+
+footer a {
+  color: white;
 }
 
 /*page d'accueil*/
@@ -680,6 +740,21 @@ footer i {
   padding-right: 25px;
 }
 
+.article-1 {
+  -webkit-animation: article 3s linear;
+  animation: article 3s linear;
+}
+
+.article-2 {
+  -webkit-animation: article 4s linear;
+  animation: article 4s linear;
+}
+
+.article-3 {
+  -webkit-animation: article 5s linear;
+  animation: article 5s linear;
+}
+
 .menu-article {
   margin: 10px 0 25px 0;
 }
@@ -741,17 +816,25 @@ footer i {
   margin: 10px 0 0 0;
 }
 
-.menu-article-texte button {
-  display: none;
-}
-
-.menu-article-texte .check .check-button {
+.menu-article-texte .check {
+  width: 0;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
-  -webkit-transition: -webkit-transform 000ms;
-  transition: -webkit-transform 000ms;
-  transition: transform 000ms;
-  transition: transform 000ms, -webkit-transform 000ms;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+.menu-article-texte .check i {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }
 
 .menu-article-texte:hover {
@@ -781,7 +864,42 @@ footer i {
   text-overflow: ellipsis;
 }
 
-.menu-article-texte:hover .check .check-button {
+.menu-article-texte:hover .check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70px;
+  width: 60px;
+  background-color: #99E2D0;
+  border: 0;
+  border-radius: 0 20px 20px 0;
+  margin: 0;
+  padding: 0;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.menu-article-texte:hover .check i {
+  height: 20px;
+  line-height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  font-size: 12px;
+  color: #99E2D0;
+  text-align: center;
+  background-color: white;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  cursor: pointer;
+}
+
+.menu-article-texte:active .check {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -803,7 +921,7 @@ footer i {
           transform: scaleX(1);
 }
 
-.menu-article-texte:hover .check .check-button i {
+.menu-article-texte:active .check i {
   height: 20px;
   line-height: 20px;
   width: 20px;
@@ -812,6 +930,8 @@ footer i {
   color: #99E2D0;
   text-align: center;
   background-color: white;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 .menu-button {
