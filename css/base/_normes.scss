@@ -8,6 +8,9 @@ body{
     margin: 0 auto;
     box-sizing: border-box;
     color: black;
+    position: relative;
+    top: 0;
+    left: 0;
 }
 h1{
     font-size: $size_h1;

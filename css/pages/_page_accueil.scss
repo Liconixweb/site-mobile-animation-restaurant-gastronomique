@@ -89,6 +89,16 @@
             padding: 0 30px 0 0;
             height: 15px;
         }
+        &:active{
+            background-color: #f5edff;
+            i{
+                color: $primaire;
+            }
+        }
+        i{
+            padding: 0 30px 0 0;
+            height: 15px;
+        }
     }
 }
 /*section*/
@@ -145,39 +155,24 @@
     align-items: center;
     height: 80px;
     width: 330px;
+    
     :nth-child(1){
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        flex-basis: 80%;
+        flex-basis: 88%;
         p{
             margin: 0;
             padding: 0 0 5px 15px;
         }
     }
     :nth-child(2){
-        flex-basis: 20%;
+        flex-basis: 12%;
         i{
             height: 20px;
             width: 20px;
             line-height: 20px;
         }        
     }
-}
-.coeur{
-    :nth-child(2){
-        display: none;  
-    }
-    &:hover{
-        :nth-child(1){
-            display: none;
-        }
-        :nth-child(2){
-            display: flex;
-        }   
-        .i{
-            color: $coeurdegrade;
-        }   
-    }    
 }

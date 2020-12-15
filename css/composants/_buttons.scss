@@ -12,11 +12,42 @@
     &:hover{
         background: linear-gradient($lightsecondaire, $lightprimaire);
         box-shadow: 10px 10px 20px $darkombre;
-        border: none;
     }
     &:active{
         background: linear-gradient($lightsecondaire, $lightprimaire);
         box-shadow: 10px 10px 20px $darkombre;
-        border: none;
     }
+}
+.coeur{
+    :nth-child(2){
+        display: none;  
+    }
+    &:hover{
+        :nth-child(1){
+            display: none;
+        }
+        :nth-child(2){
+            display: flex;
+        }   
+        .fas.fa-heart{
+            background-clip: text;
+            -webkit-background-clip: text;
+            background-image: $coeurdegrade;
+            color: transparent;
+        }   
+    }
+    &:active{
+        :nth-child(1){
+            display: none;
+        }
+        :nth-child(2){
+            display: flex;
+        }   
+        .fas.fa-heart{
+            background-clip: text;
+            -webkit-background-clip: text;
+            background-image: $coeurdegrade;
+            color: transparent;
+        }   
+    }    
 }

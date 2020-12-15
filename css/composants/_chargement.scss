@@ -3,21 +3,26 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100px;
-    width: 200px;
+    align-items: center;
+    height: 100%;
+    width: 100%;
     margin: auto;
-    position: absolute;
-    top: 200px;
-    right: 0;
-    left: 105px;
-    bottom: 0;
-    margin: 0;    
+    position: fixed;  
+    top: 0;
+    left: 0;
+    -webkit-animation: chargement 10s ;
+    -moz-animation: chargement 10s;
+    animation: chargement 10s;  
+    z-index: 3;
+    visibility: hidden;
 }     
 .chargement-icon{        
     height: 100px;
     width: 100px;
-    -webkit-animation: spinner 3s linear 3;
-    animation: spinner 3s linear 3;
+    position: fixed;
+    -webkit-animation: spinner 3s ease-in 3;
+    -moz-animation: spinner 3s ease-in 3;
+    animation: spinner 3s ease-in 3;
     color: $secondaire;
     padding: 0 0 150px 30px;
     text-align: center;
@@ -27,8 +32,9 @@
 .chargement-texte{
     height: 20px;
     width: 100px;
-    -webkit-animation: chargement 3s linear 3;
-    animation: chargement 3s linear 3;
+    -webkit-animation: chargement-texte 6s linear;
+    -moz-animation: chargement-texte 6s linear;
+    animation: chargement-texte 6s linear;
     color: $primaire;
     font-size: 30px;
     font-weight: bold;
@@ -37,20 +43,40 @@
 }
 
 /*Animation du loader*/
+
+@keyframes chargement{
+    0%{
+        visibility: visible;
+        background: $darkombre;
+    }
+    50%{
+        visibility: hidden;
+        background: $ombre;
+    }
+    100%{
+        visibility: hidden;
+        
+    }
+}
 @keyframes spinner{
     0%{
-        opacity: 0;
+        display: none;
         transform: rotate(0deg);
     }
     100%{
-        opacity: 1;
+        opacity: 1;        
         transform: rotate(360deg);
+        display: none;
     }
 }
-@keyframes chargement{
+@keyframes chargement-texte{
     0%{
-        opacity: 0;
+        display: none;
         transform: scale(0);
+    }
+    50%{
+        opacity: 1;
+        transform: scale(0.5);
     }
     100%{
         opacity: 1;
