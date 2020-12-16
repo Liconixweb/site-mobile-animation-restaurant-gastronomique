@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+        <meta name="site de commande de menus dans les restaurants" content="Plusieurs propositions de menus pour plusieurs restaurants."/>
         <link href="css/styles.css" rel="stylesheet" type="text/css"/>        
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Shrikhand&display=swap" rel="stylesheet"> 
@@ -27,14 +29,14 @@
                 </div>
                 <div class="header-input">
                     <form method="post" action ="#">
-                        <i class="fas fa-map-marker-alt fa-1x"></i>
-                        <input type="text" name="ville" id="ville" placeholder="Paris, Belleville" maxlength="100" autofocus/>                            
+                        <label for="ville"><i class="fas fa-map-marker-alt fa-1x"></i></label>
+                        <input type="text" name="ville" id="ville" placeholder="Paris, Belleville" required minlength="2" maxlength="100" autofocus/>                            
                     </form>
                 </div>
                 <div class="header-text">
                     <h2><strong>Réservez le menu qui vous convient</strong></h1>
                     <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-                    <a href="#">
+                    <a href="#restaurant">
                         <button class="button" name="button" type="button">
                             Explorer nos restaurants
                         </button>
@@ -71,7 +73,7 @@
             </nav>        
             <!--section-->
             <section class="accueil-section">
-                <h2>Restaurants</h2>
+                <h2 id="restaurant">Restaurants</h2>
                 <a href="menu1.html">
                     <div class="menu">
                         <figure>
@@ -157,9 +159,7 @@
                 <p><i class="fas fa-utensils"></i>Proposer un restaurant</p>
                 <p><i class="fas fa-hands-helping"></i>Devenir partenaire</p>
                 <p>Mentions légales</p>
-                <a href="#">
-                    <p>Contact</p>
-                </a>
+                <a href="mailto:ohmyfood@resto.fr">Contact</a>
             </footer>
         </div>
     </body>

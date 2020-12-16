@@ -14,6 +14,13 @@ html {
 }
 
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   max-width: 375px;
   height: 100%;
   margin: 0 auto;
@@ -196,7 +203,7 @@ a {
 /*Chargement page menu*/
 @-webkit-keyframes article {
   0% {
-    visibility: visible;
+    visibility: hidden;
     -webkit-transform: translateY(100%);
             transform: translateY(100%);
   }
@@ -223,7 +230,7 @@ a {
 }
 @keyframes article {
   0% {
-    visibility: visible;
+    visibility: hidden;
     -webkit-transform: translateY(100%);
             transform: translateY(100%);
   }
@@ -246,6 +253,24 @@ a {
     visibility: visible;
     -webkit-transform: translateY(0);
             transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes footer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes footer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -276,6 +301,7 @@ a {
   background: linear-gradient(#ffdff6, #c9abee);
   -webkit-box-shadow: 10px 10px 20px #c9c6c6;
           box-shadow: 10px 10px 20px #c9c6c6;
+  outline-style: none;
 }
 
 .coeur :nth-child(2) {
@@ -365,6 +391,9 @@ footer i {
 
 footer a {
   color: white;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: "Roboto Condense", sans-serif;
 }
 
 /*page d'accueil*/
@@ -486,6 +515,12 @@ footer a {
   border-radius: 20px 20px 20px 20px;
   border: none;
   cursor: pointer;
+  outline-style: none;
+}
+
+.nav-button button i {
+  padding: 0 30px 0 0;
+  height: 15px;
 }
 
 .nav-button button:hover {
@@ -496,22 +531,13 @@ footer a {
   color: #9356DC;
 }
 
-.nav-button button i {
-  padding: 0 30px 0 0;
-  height: 15px;
-}
-
 .nav-button button:active {
   background-color: #f5edff;
+  outline-style: none;
 }
 
 .nav-button button:active i {
   color: #9356DC;
-}
-
-.nav-button button i {
-  padding: 0 30px 0 0;
-  height: 15px;
 }
 
 /*section*/
@@ -883,6 +909,7 @@ footer a {
   padding: 0;
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
+  outline-style: none;
 }
 
 .menu-article-texte:hover .check i {
@@ -919,6 +946,7 @@ footer a {
   cursor: pointer;
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
+  outline-style: none;
 }
 
 .menu-article-texte:active .check i {
@@ -942,11 +970,13 @@ footer a {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 50px 0 70px 0;
+  -webkit-animation: button-menu 9s ease-in;
+  animation: button-menu 9s ease-in;
 }
 
 .menu-1-footer {
   position: relative;
-  top: 1100px;
+  top: 1110px;
   z-index: 2;
 }
 
@@ -965,6 +995,5 @@ footer a {
 .menu-4-footer {
   position: relative;
   top: 1100px;
-  z-index: 2;
 }
 /*# sourceMappingURL=styles.css.map */

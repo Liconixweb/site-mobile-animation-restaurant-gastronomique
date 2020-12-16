@@ -79,25 +79,23 @@
         border-radius: 20px 20px 20px 20px;
         border: none;
         cursor: pointer;
+        outline-style: none;
+        i{
+            padding: 0 30px 0 0;
+            height: 15px;
+        }
         &:hover{
             background-color: #f5edff;
             i{
                 color: $primaire;
             }
         }
-        i{
-            padding: 0 30px 0 0;
-            height: 15px;
-        }
         &:active{
             background-color: #f5edff;
+            outline-style: none;
             i{
                 color: $primaire;
             }
-        }
-        i{
-            padding: 0 30px 0 0;
-            height: 15px;
         }
     }
 }

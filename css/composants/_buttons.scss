@@ -16,6 +16,7 @@
     &:active{
         background: linear-gradient($lightsecondaire, $lightprimaire);
         box-shadow: 10px 10px 20px $darkombre;
+        outline-style: none;
     }
 }
 .coeur{

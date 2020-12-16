@@ -185,6 +185,7 @@
             margin: 0;
             padding: 0;
             transform: scaleX(1);
+            outline-style: none;
             i{
             height: 20px;
             line-height: 20px;
@@ -213,6 +214,7 @@
             padding: 0;
             cursor: pointer;
             transform: scaleX(1);
+            outline-style: none;
             i{
             height: 20px;
             line-height: 20px;
@@ -231,10 +233,13 @@
     display: flex;
     justify-content: center;
     margin: 50px 0 70px 0;
+    -webkit-animation: button-menu 9s ease-in;
+    -moz-animation: button-menu 9s ease-in;
+    animation: button-menu 9s ease-in;
 }
 .menu-1-footer{
     position: relative;
-    top: 1100px;
+    top: 1110px;
     z-index: 2;
 }
 .menu-2-footer{
@@ -250,5 +255,4 @@
 .menu-4-footer{
     position: relative;
     top: 1100px;
-    z-index: 2;
 }

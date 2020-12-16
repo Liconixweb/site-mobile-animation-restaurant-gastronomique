@@ -3,6 +3,8 @@ html{
     height: 100%;
 }
 body{
+    display: flex;
+    flex-direction: column;
     max-width: 375px;
     height: 100%;
     margin: 0 auto;
