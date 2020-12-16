@@ -256,7 +256,7 @@ a {
   }
 }
 
-@-webkit-keyframes footer {
+@-webkit-keyframes button-menu {
   0% {
     opacity: 0;
   }
@@ -265,7 +265,7 @@ a {
   }
 }
 
-@keyframes footer {
+@keyframes button-menu {
   0% {
     opacity: 0;
   }
@@ -754,7 +754,7 @@ footer a {
 .menu-section-title h1 {
   width: 300px;
   font-style: italic;
-  font-weight: 1000;
+  font-weight: 900;
   margin: 0;
 }
 
