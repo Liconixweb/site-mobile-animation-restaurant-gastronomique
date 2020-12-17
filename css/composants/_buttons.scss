@@ -9,6 +9,7 @@
     background: linear-gradient($secondaire, $primaire);
     border: none;
     cursor: pointer;
+    outline-style: none;
     &:hover{
         background: linear-gradient($lightsecondaire, $lightprimaire);
         box-shadow: 10px 10px 20px $darkombre;
@@ -31,7 +32,7 @@
             display: flex;
         }   
         .fas.fa-heart{
-            background-clip: text;
+            background-clip: content-box;
             -webkit-background-clip: text;
             background-image: $coeurdegrade;
             color: transparent;
@@ -45,7 +46,7 @@
             display: flex;
         }   
         .fas.fa-heart{
-            background-clip: text;
+            background-clip: content-box;
             -webkit-background-clip: text;
             background-image: $coeurdegrade;
             color: transparent;

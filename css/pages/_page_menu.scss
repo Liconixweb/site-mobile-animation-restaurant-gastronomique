@@ -141,9 +141,14 @@
     cursor: pointer;
     h3{
         margin: 10px 0 0 0; 
-    }    
+    } 
+    label{
+        cursor: default;
+    }   
     .check{
         width: 0;
+        height: 0;
+        visibility: hidden;
         transform: scaleX(0);
         transition: transform 1s;
         transform-origin: right;
@@ -186,6 +191,7 @@
             padding: 0;
             transform: scaleX(1);
             outline-style: none;
+            visibility: visible;
             i{
             height: 20px;
             line-height: 20px;
