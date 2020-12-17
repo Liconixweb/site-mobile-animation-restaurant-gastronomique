@@ -2,8 +2,10 @@
 .menu-nav{
     display: flex;
     flex-wrap: nowrap;
+    justify-content: center;
     align-items: center;
     height: 65px;
+    margin: 0 auto;
     padding-left: 20px;
     i{
         height: 20px;
@@ -16,10 +18,11 @@
 }
 .menu-header{
     height: 260px;
+    width: 100%;
 }
 .menu-photo{
     height: 255px;
-    width: 375px;
+    width: 100%;
     margin: 0;
     img{
         max-height: 100%;
@@ -29,42 +32,58 @@
     }
 }
 .menu-1-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 1090px;
+    width: 100%;
     position: absolute;
     top: 280px;
     background-color: #f6f6f6;
-    border-radius: 20px 20px 0 0;
-    margin-bottom: 0;
-    padding: 30px 13px 30px 13px;
+    border-radius: 40px 40px 0 0;
+    margin: 0 auto;
+    padding: 30px 0 40px 0;
     z-index: 1;
 }
 .menu-2-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 1200px;
+    width: 100%;
     position: absolute;
     top: 280px;
     background-color: #f6f6f6;
-    border-radius: 20px 20px 0 0;
-    padding: 40px 13px 0 13px;
+    border-radius: 40px 40px 0 0;
+    padding-top: 40px;
     z-index: 1;
 }
 .menu-3-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 1090px;
+    width: 100%;
     position: absolute;
     top: 280px;
     background-color: #f6f6f6;
-    border-radius: 20px 20px 0 0;
+    border-radius: 40px 40px 0 0;
     margin-bottom: 0;
-    padding: 40px 13px 30px 13px;
+    padding: 40px 0 30px 0;
     z-index: 1;
 }
 .menu-4-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 1090px;
+    width: 100%;
     position: absolute;
     top: 280px;
     background-color: #f6f6f6;
-    border-radius: 20px 20px 0 0;
+    border-radius: 40px 40px 0 0;
     margin-bottom: 0;
-    padding: 40px 13px 20px 13px;
+    padding: 40px 0 20px 0;
     z-index: 1;
 }
 .menu-section-title{
@@ -78,6 +97,7 @@
         font-style: italic;
         font-weight: 900;   
         margin: 0; 
+        padding-left: 5px;
     }
     i{
         height: 25px;
@@ -97,14 +117,14 @@
     -moz-animation: article 4s linear;
     animation: article 4s linear;
 }
-.article-3{
-    
+.article-3{    
     -webkit-animation: article 5s linear;
     -moz-animation: article 5s linear;
     animation: article 5s linear;
 }
 .menu-article{
-    margin: 10px 0 25px 0;
+    width: 100%;
+    margin-top: 10px;
     h2{
         height: 20px;
         font-size: 16px;
@@ -126,6 +146,9 @@
     p{
         margin: 10px 0 10px 0;
     }
+    @media all and(min-width: 600px){
+        width: 400px;
+    }
 }
 .menu-article-texte{
     display: flex;
@@ -142,9 +165,6 @@
     h3{
         margin: 10px 0 0 0; 
     } 
-    label{
-        cursor: default;
-    }   
     .check{
         width: 0;
         height: 0;
@@ -158,24 +178,23 @@
         }
     }
     &:hover{
-        padding-right: 0;
-        width: 335px;
-        h3{
-            width: 240px;
-            white-space: nowrap;
-            overflow: hidden;
-        }
+        padding-right: 0;        
         .menu-article-prix{
-            width: 240px;
-            padding: 0px;   
-            p{
-                width: 220px;
+            width: 275px;
+            padding: 0px;  
+            p{     
+                width: 230px;          
                 white-space: nowrap;
                 overflow: hidden;
                 padding-right: 15px;
-            }         
+            }       
         }
-        .overflow{
+        h3{
+            width: 230px;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        .overflow{   
             text-overflow: ellipsis;
         }
         .check{
@@ -207,6 +226,24 @@
         }
     }
     &:active{
+        padding-right: 0;        
+        .menu-article-prix{
+            width: 275px;
+            padding: 0px;  
+            p{               
+                white-space: nowrap;
+                overflow: hidden;
+                padding-right: 15px;
+            }       
+        }
+        h3{
+            width: 275px;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        .overflow{   
+            text-overflow: ellipsis;
+        }
         .check{
             display: flex;  
             justify-content: center;
@@ -218,9 +255,9 @@
             border-radius: 0 20px 20px 0;
             margin: 0;
             padding: 0;
-            cursor: pointer;
             transform: scaleX(1);
             outline-style: none;
+            visibility: visible;
             i{
             height: 20px;
             line-height: 20px;
@@ -231,7 +268,63 @@
             text-align: center;
             background-color: white;
             transform: rotate(360deg);
+            cursor: pointer;
             }
+        }
+    }
+    @media all and(min-width: 600px){
+        width: 500px;
+        .menu-article-prix{
+            width: 455px;
+            padding: 0px;  
+            p{     
+                width: 430px;          
+                white-space: nowrap;
+                overflow: hidden;
+                padding-right: 15px;
+            }       
+        }
+        h3{
+            width: 430px;
+        }
+        .check{
+                width: 80px;
+            }  
+        &:hover{
+            .menu-article-prix{
+                width: 400px;
+                padding: 0px;  
+                p{     
+                    width: 360px;          
+                    white-space: nowrap;
+                    overflow: hidden;
+                    padding-right: 15px;
+                }       
+            }
+            h3{
+                width: 360px;
+            }
+            .check{
+                    width: 80px;
+                }  
+        }
+        &:active{
+            .menu-article-prix{
+                width: 400px;
+                padding: 0px;  
+                p{     
+                    width: 360px;          
+                    white-space: nowrap;
+                    overflow: hidden;
+                    padding-right: 15px;
+                }       
+            }
+            h3{
+                width: 360px;
+            }
+            .check{
+                    width: 80px;
+                }  
         }
     }
 }

@@ -19,6 +19,11 @@
         box-shadow: 10px 10px 20px $darkombre;
         outline-style: none;
     }
+    @media all and(min-width: 600px){
+        height: 80px;
+        width: 250px;
+        font-size: 18px;
+    } 
 }
 .coeur{
     :nth-child(2){

@@ -5,7 +5,6 @@ html{
 body{
     display: flex;
     flex-direction: column;
-    max-width: 375px;
     height: 100%;
     margin: 0 auto;
     box-sizing: border-box;
@@ -13,6 +12,18 @@ body{
     position: relative;
     top: 0;
     left: 0;
+}
+header{
+    width: 100%;
+}
+.accueil-nav{
+    max-width: 375px;
+}
+nav{
+    width: 100%;
+}
+section{
+    width: 100%;
 }
 h1{
     font-size: $size_h1;

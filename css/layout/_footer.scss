@@ -26,4 +26,7 @@ footer{
         font-size: $size_p;
         font-family: $texte;
     }
+    @media all and(min-width: 600px){
+        text-align: center;
+    }
 }
