@@ -31,6 +31,7 @@
         overflow: hidden;
     }
 }
+
 .menu-1-section{
     display: flex;
     flex-direction: column;
@@ -99,7 +100,7 @@
         margin: 0; 
         padding-left: 5px;
     }
-    i{
+    .coeur{
         height: 25px;
         width: 25px;
         font-size: 25px;        
@@ -211,6 +212,9 @@
             transform: scaleX(1);
             outline-style: none;
             visibility: visible;
+           /* -webkit-animation: button-menu 9s ease-in;
+            -moz-animation: button-menu 9s ease-in;
+            animation: button-menu 9s ease-in;*/
             i{
             height: 20px;
             line-height: 20px;
