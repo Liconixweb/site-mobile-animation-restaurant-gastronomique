@@ -296,6 +296,25 @@
         h3{
             width: 360px;
         }
+        &:hover{
+            width: 515px;
+            .menu-article-prix{
+                padding: 0px;  
+                .overflow{     
+                    width: 360px;          
+                    padding-right: 15px;
+                }   
+                :nth-child(2){
+                    width: 20px;
+                }    
+            }
+            h3{
+                width: 205px;
+            }
+            .check{
+                    width: 80px;
+                }  
+        }
         &:active{
             width: 515px;
             .menu-article-prix{

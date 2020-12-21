@@ -1225,6 +1225,25 @@ footer a {
   .menu-article-texte h3 {
     width: 360px;
   }
+  .menu-article-texte:hover {
+    width: 515px;
+  }
+  .menu-article-texte:hover .menu-article-prix {
+    padding: 0px;
+  }
+  .menu-article-texte:hover .menu-article-prix .overflow {
+    width: 360px;
+    padding-right: 15px;
+  }
+  .menu-article-texte:hover .menu-article-prix :nth-child(2) {
+    width: 20px;
+  }
+  .menu-article-texte:hover h3 {
+    width: 205px;
+  }
+  .menu-article-texte:hover .check {
+    width: 80px;
+  }
   .menu-article-texte:active {
     width: 515px;
   }
