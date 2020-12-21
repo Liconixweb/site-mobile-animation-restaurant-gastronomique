@@ -218,54 +218,54 @@ a {
 /*Chargement page menu*/
 @-webkit-keyframes article {
   0% {
-    visibility: hidden;
+    opacity: 0;
     -webkit-transform: translateY(100%);
             transform: translateY(100%);
   }
   25% {
-    visibility: visible;
+    opacity: 0,25;
     -webkit-transform: translateY(75%);
             transform: translateY(75%);
   }
   50% {
-    visibility: visible;
+    opacity: 0,5;
     -webkit-transform: translateY(50%);
             transform: translateY(50%);
   }
   75% {
-    visibility: visible;
+    opacity: 0,75;
     -webkit-transform: translateY(25%);
             transform: translateY(25%);
   }
   100% {
-    visibility: visible;
+    opacity: 1;
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
 }
 @keyframes article {
   0% {
-    visibility: hidden;
+    opacity: 0;
     -webkit-transform: translateY(100%);
             transform: translateY(100%);
   }
   25% {
-    visibility: visible;
+    opacity: 0,25;
     -webkit-transform: translateY(75%);
             transform: translateY(75%);
   }
   50% {
-    visibility: visible;
+    opacity: 0,5;
     -webkit-transform: translateY(50%);
             transform: translateY(50%);
   }
   75% {
-    visibility: visible;
+    opacity: 0,75;
     -webkit-transform: translateY(25%);
             transform: translateY(25%);
   }
   100% {
-    visibility: visible;
+    opacity: 1;
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
@@ -275,6 +275,15 @@ a {
   0% {
     opacity: 0;
   }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
   100% {
     opacity: 1;
   }
@@ -282,6 +291,15 @@ a {
 
 @keyframes button-menu {
   0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
     opacity: 0;
   }
   100% {
@@ -962,18 +980,18 @@ footer a {
 }
 
 .article-1 {
+  -webkit-animation: article 2s linear;
+  animation: article 2s linear;
+}
+
+.article-2 {
   -webkit-animation: article 3s linear;
   animation: article 3s linear;
 }
 
-.article-2 {
+.article-3 {
   -webkit-animation: article 4s linear;
   animation: article 4s linear;
-}
-
-.article-3 {
-  -webkit-animation: article 5s linear;
-  animation: article 5s linear;
 }
 
 .menu-article {
@@ -1004,7 +1022,22 @@ footer a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 320px;
+}
+
+.menu-article-prix .overflow {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 300px;
+  -webkit-transition: width 500ms ease-out;
+  transition: width 500ms ease-out;
+}
+
+.menu-article-prix :nth-child(2) {
+  width: 20px;
+  font-weight: bold;
+  -webkit-transition: width 500ms ease-out;
+  transition: width 500ms ease-out;
 }
 
 .menu-article-prix p {
@@ -1012,8 +1045,11 @@ footer a {
 }
 
 @media all and (min-width: 600px) {
-  .menu-article-prix {
-    width: 400px;
+  .menu-article-prix .overflow {
+    width: 420px;
+  }
+  .menu-article-prix :nth-child(2) {
+    width: 20px;
   }
 }
 
@@ -1041,56 +1077,53 @@ footer a {
 }
 
 .menu-article-texte h3 {
+  width: 310px;
   margin: 10px 0 0 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-transition: width 500ms ease-out;
+  transition: width 500ms ease-out;
 }
 
 .menu-article-texte .check {
   width: 0;
   height: 0;
+  margin: 0;
+  padding: 0;
   visibility: hidden;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
-  -webkit-transform-origin: right;
-          transform-origin: right;
+  -webkit-transition: width 500ms ease-out;
+  transition: width 500ms ease-out;
 }
 
 .menu-article-texte .check i {
+  visibility: hidden;
+  -webkit-transition: visibility 500ms ease-out;
+  transition: visibility 500ms ease-out;
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transition: -webkit-transform 500ms ease-out;
+  transition: -webkit-transform 500ms ease-out;
+  transition: transform 500ms ease-out;
+  transition: transform 500ms ease-out, -webkit-transform 500ms ease-out;
 }
 
 .menu-article-texte:hover {
+  width: 335px;
   padding-right: 0;
 }
 
-.menu-article-texte:hover .menu-article-prix {
-  width: 275px;
-  padding: 0px;
+.menu-article-texte:hover .menu-article-prix .overflow {
+  padding-right: 15px;
+  width: 200px;
 }
 
-.menu-article-texte:hover .menu-article-prix p {
-  width: 230px;
-  white-space: nowrap;
-  overflow: hidden;
-  padding-right: 15px;
+.menu-article-texte:hover .menu-article-prix :nth-child(2) {
+  width: 10px;
 }
 
 .menu-article-texte:hover h3 {
-  width: 230px;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.menu-article-texte:hover .overflow {
-  text-overflow: ellipsis;
+  width: 150px;
 }
 
 .menu-article-texte:hover .check {
@@ -1110,13 +1143,9 @@ footer a {
   border-radius: 0 20px 20px 0;
   margin: 0;
   padding: 0;
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
+  cursor: pointer;
   outline-style: none;
   visibility: visible;
-  /* -webkit-animation: button-menu 9s ease-in;
-            -moz-animation: button-menu 9s ease-in;
-            animation: button-menu 9s ease-in;*/
 }
 
 .menu-article-texte:hover .check i {
@@ -1130,32 +1159,26 @@ footer a {
   background-color: white;
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
+  visibility: visible;
   cursor: pointer;
 }
 
 .menu-article-texte:active {
+  width: 335px;
   padding-right: 0;
 }
 
-.menu-article-texte:active .menu-article-prix {
-  width: 275px;
-  padding: 0px;
+.menu-article-texte:active .menu-article-prix .overflow {
+  padding-right: 15px;
+  width: 200px;
 }
 
-.menu-article-texte:active .menu-article-prix p {
-  white-space: nowrap;
-  overflow: hidden;
-  padding-right: 15px;
+.menu-article-texte:active .menu-article-prix :nth-child(2) {
+  width: 10px;
 }
 
 .menu-article-texte:active h3 {
-  width: 275px;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.menu-article-texte:active .overflow {
-  text-overflow: ellipsis;
+  width: 150px;
 }
 
 .menu-article-texte:active .check {
@@ -1175,8 +1198,7 @@ footer a {
   border-radius: 0 20px 20px 0;
   margin: 0;
   padding: 0;
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
+  cursor: pointer;
   outline-style: none;
   visibility: visible;
 }
@@ -1192,6 +1214,7 @@ footer a {
   background-color: white;
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
+  visibility: visible;
   cursor: pointer;
 }
 
@@ -1199,50 +1222,24 @@ footer a {
   .menu-article-texte {
     width: 500px;
   }
-  .menu-article-texte .menu-article-prix {
-    width: 455px;
-    padding: 0px;
-  }
-  .menu-article-texte .menu-article-prix p {
-    width: 430px;
-    white-space: nowrap;
-    overflow: hidden;
-    padding-right: 15px;
-  }
   .menu-article-texte h3 {
-    width: 430px;
-  }
-  .menu-article-texte .check {
-    width: 80px;
-  }
-  .menu-article-texte:hover .menu-article-prix {
-    width: 400px;
-    padding: 0px;
-  }
-  .menu-article-texte:hover .menu-article-prix p {
-    width: 360px;
-    white-space: nowrap;
-    overflow: hidden;
-    padding-right: 15px;
-  }
-  .menu-article-texte:hover h3 {
     width: 360px;
   }
-  .menu-article-texte:hover .check {
-    width: 80px;
+  .menu-article-texte:active {
+    width: 515px;
   }
   .menu-article-texte:active .menu-article-prix {
-    width: 400px;
     padding: 0px;
   }
-  .menu-article-texte:active .menu-article-prix p {
+  .menu-article-texte:active .menu-article-prix .overflow {
     width: 360px;
-    white-space: nowrap;
-    overflow: hidden;
     padding-right: 15px;
   }
+  .menu-article-texte:active .menu-article-prix :nth-child(2) {
+    width: 20px;
+  }
   .menu-article-texte:active h3 {
-    width: 360px;
+    width: 205px;
   }
   .menu-article-texte:active .check {
     width: 80px;
@@ -1257,8 +1254,8 @@ footer a {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 50px 0 70px 0;
-  -webkit-animation: button-menu 9s ease-in;
-  animation: button-menu 9s ease-in;
+  -webkit-animation: button-menu 7s ease-in;
+  animation: button-menu 7s ease-in;
 }
 
 .menu-1-footer {

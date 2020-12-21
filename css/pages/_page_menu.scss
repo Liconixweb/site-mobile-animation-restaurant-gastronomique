@@ -108,20 +108,20 @@
         padding-right: 25px;
     }
 }
-.article-1{
-    -webkit-animation: article 3s linear;
-    -moz-animation: article 3s linear;
-    animation: article 3s linear;
+.article-1{    
+    -webkit-animation: article 2s linear ;
+    -moz-animation: article 2s linear ;
+    animation: article 2s linear ;
 }
 .article-2{    
-    -webkit-animation: article 4s linear;
-    -moz-animation: article 4s linear;
-    animation: article 4s linear;
+    -webkit-animation: article 3s linear ;
+    -moz-animation: article 3s linear ;
+    animation: article 3s linear ;
 }
 .article-3{    
-    -webkit-animation: article 5s linear;
-    -moz-animation: article 5s linear;
-    animation: article 5s linear;
+    -webkit-animation: article 4s linear ;
+    -moz-animation: article 4s linear ;
+    animation: article 4s linear ;
 }
 .menu-article{
     width: 100%;
@@ -143,12 +143,28 @@
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    width: 320px;
-    p{
+    .overflow{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; 
+        width: 300px;
+        transition: width 500ms ease-out;
+    }
+    :nth-child(2){
+        width: 20px;
+        font-weight: bold;
+        transition: width 500ms ease-out;
+    }
+    p{        
         margin: 10px 0 10px 0;
     }
     @media all and(min-width: 600px){
-        width: 400px;
+        .overflow{
+            width: 420px;
+        }
+        :nth-child(2){
+            width: 20px;
+        }
     }
 }
 .menu-article-texte{
@@ -164,40 +180,43 @@
     padding: 15px;
     cursor: pointer;
     h3{
-        margin: 10px 0 0 0; 
-    } 
+        width: 310px;
+        margin: 10px 0 0 0;
+        white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis; 
+        transition: width 500ms ease-out;
+    }
     .check{
         width: 0;
         height: 0;
+        margin: 0;
+        padding: 0;
         visibility: hidden;
-        transform: scaleX(0);
-        transition: transform 1s;
-        transform-origin: right;
+        transition: width 500ms ease-out;
         i{
+            visibility: hidden;
+            transition: visibility 500ms ease-out;
             transform: rotate(0deg);
-            transition: transform 1s;
+            transition: transform 500ms ease-out;
         }
     }
     &:hover{
-        padding-right: 0;        
+        width: 335px;
+        padding-right: 0;    
         .menu-article-prix{
-            width: 275px;
-            padding: 0px;  
-            p{     
-                width: 230px;          
-                white-space: nowrap;
-                overflow: hidden;
+            .overflow{   
                 padding-right: 15px;
-            }       
+                width: 200px;
+            }
+            :nth-child(2){
+                width: 10px;  
+            }
         }
         h3{
-            width: 230px;
-            white-space: nowrap;
-            overflow: hidden;
+            width: 150px;
         }
-        .overflow{   
-            text-overflow: ellipsis;
-        }
+        
         .check{
             display: flex;  
             justify-content: center;
@@ -209,12 +228,9 @@
             border-radius: 0 20px 20px 0;
             margin: 0;
             padding: 0;
-            transform: scaleX(1);
-            outline-style: none;
+            cursor: pointer;
+            outline-style: none;            
             visibility: visible;
-           /* -webkit-animation: button-menu 9s ease-in;
-            -moz-animation: button-menu 9s ease-in;
-            animation: button-menu 9s ease-in;*/
             i{
             height: 20px;
             line-height: 20px;
@@ -225,29 +241,27 @@
             text-align: center;
             background-color: white;
             transform: rotate(360deg);
+            visibility: visible;
             cursor: pointer;
             }
         }
     }
     &:active{
-        padding-right: 0;        
+        width: 335px;
+        padding-right: 0;    
         .menu-article-prix{
-            width: 275px;
-            padding: 0px;  
-            p{               
-                white-space: nowrap;
-                overflow: hidden;
+            .overflow{   
                 padding-right: 15px;
-            }       
+                width: 200px;
+            }
+            :nth-child(2){
+                width: 10px;  
+            }
         }
         h3{
-            width: 275px;
-            white-space: nowrap;
-            overflow: hidden;
+            width: 150px;
         }
-        .overflow{   
-            text-overflow: ellipsis;
-        }
+        
         .check{
             display: flex;  
             justify-content: center;
@@ -259,8 +273,8 @@
             border-radius: 0 20px 20px 0;
             margin: 0;
             padding: 0;
-            transform: scaleX(1);
-            outline-style: none;
+            cursor: pointer;
+            outline-style: none;            
             visibility: visible;
             i{
             height: 20px;
@@ -272,59 +286,30 @@
             text-align: center;
             background-color: white;
             transform: rotate(360deg);
+            visibility: visible;
             cursor: pointer;
             }
         }
     }
     @media all and(min-width: 600px){
         width: 500px;
-        .menu-article-prix{
-            width: 455px;
-            padding: 0px;  
-            p{     
-                width: 430px;          
-                white-space: nowrap;
-                overflow: hidden;
-                padding-right: 15px;
-            }       
-        }
         h3{
-            width: 430px;
-        }
-        .check{
-                width: 80px;
-            }  
-        &:hover{
-            .menu-article-prix{
-                width: 400px;
-                padding: 0px;  
-                p{     
-                    width: 360px;          
-                    white-space: nowrap;
-                    overflow: hidden;
-                    padding-right: 15px;
-                }       
-            }
-            h3{
-                width: 360px;
-            }
-            .check{
-                    width: 80px;
-                }  
+            width: 360px;
         }
         &:active{
+            width: 515px;
             .menu-article-prix{
-                width: 400px;
                 padding: 0px;  
-                p{     
+                .overflow{     
                     width: 360px;          
-                    white-space: nowrap;
-                    overflow: hidden;
                     padding-right: 15px;
-                }       
+                }   
+                :nth-child(2){
+                    width: 20px;
+                }    
             }
             h3{
-                width: 360px;
+                width: 205px;
             }
             .check{
                     width: 80px;
@@ -336,9 +321,9 @@
     display: flex;
     justify-content: center;
     margin: 50px 0 70px 0;
-    -webkit-animation: button-menu 9s ease-in;
-    -moz-animation: button-menu 9s ease-in;
-    animation: button-menu 9s ease-in;
+    -webkit-animation: button-menu 7s ease-in;
+    -moz-animation: button-menu 7s ease-in;
+    animation: button-menu 7s ease-in;
 }
 .menu-1-footer{
     position: relative;
